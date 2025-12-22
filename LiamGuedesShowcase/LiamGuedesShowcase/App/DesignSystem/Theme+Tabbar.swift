@@ -8,7 +8,14 @@
 import SwiftUI
 
 extension Theme {
-    func applyTabbar() -> UITabBarAppearance {
+    
+    // Notes for Myself:
+    // When you have a utility class, it doesn't make sense to create a default function
+    // because you would need to create an instance (in this case, a Theme with Init),
+    // increasing CPU processing. For utility classes like this, use static properties.
+    // This decreases CPU usage and avoids creating an instance on the Heap.
+    
+    static func applyTabbar() -> UITabBarAppearance {
         let appearance = UITabBarAppearance()
         
         appearance.configureWithDefaultBackground()
