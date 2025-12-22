@@ -11,8 +11,8 @@ struct MainTabView: View {
     @State private var selectedTab: Int = 0
     
     init() {
-        UITabBar.appearance().standardAppearance = Theme().applyTabbar()
-        UITabBar.appearance().scrollEdgeAppearance = Theme().applyTabbar()
+        UITabBar.appearance().standardAppearance = Theme.applyTabbar()
+        UITabBar.appearance().scrollEdgeAppearance = Theme.applyTabbar()
     }
     
     var body: some View {
