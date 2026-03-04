@@ -67,8 +67,6 @@ class SafeViewModel: ObservableObject {
     }
 }
 
-// MARK: - 3. A Tela de Demonstração (UI)
-
 struct MemoryLeakView: View {
     var body: some View {
         List {
@@ -111,7 +109,7 @@ struct MemoryLeakView: View {
     }
 }
 
-// MARK: - Sub-Views (Para isolar o ciclo de vida)
+// MARK: - Sub-Views
 
 struct LeakingScenarioView: View {
     @StateObject var vm = ToxicViewModel()

@@ -22,6 +22,15 @@ struct LabView: View {
                         }
                     }
                     
+                    NavigationLink(destination: APIMemoryLeakView()) {
+                        Label {
+                            Text("API Retain Cycle (Leak)")
+                        } icon: {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                                            .foregroundColor(.red)
+                        }
+                    }
+                    
                     NavigationLink(destination: Text("Upcoming: Weak x Unowned")) {
                                             Label("Weak vs Unowned", systemImage: "link")
                                         }
@@ -47,6 +56,6 @@ struct LabView: View {
     }
 }
 
-//#Preview {
-//    LabView()
-//}
+#Preview {
+    LabView()
+}
