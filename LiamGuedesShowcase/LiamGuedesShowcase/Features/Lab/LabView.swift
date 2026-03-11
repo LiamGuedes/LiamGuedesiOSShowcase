@@ -33,7 +33,7 @@ struct LabView: View {
                     
                     NavigationLink(destination: LoginViewWrapper()) {
                                             Label("CombineUIKit", systemImage: "link")
-                                        }
+                    }
                 }
                 
                 // MARK: Concurrency
